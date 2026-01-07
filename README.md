@@ -35,16 +35,16 @@ This is not a __real service__ and does not perform actual account creation.
 - Using semantic HTML elements for accessibility and clarity
 
 ## Technical Notes
-- Layout
+- __Layout__
     - The main layout is handled using a flex container with a fixed image sidebar and flexible form area
     - The image sidebar is hidden on smaller screens to simplify layout
     - Almost all of the responsive design is done with the help of math function instead of media queries
-- Form organization
+- __Form organization__
     - Inputs are grouped using `<fieldset>` for logical separation
     - Legends are visually hidden but preserved for accessibility
-- Validation
+- __Validation__
     - Client side validation is done with HTML and CSS
-- Styling
+- __Styling__
     - A centralized CSS variable system controls colors and themes
     - Focus styling uses `outline` instead of borders to avoid layout shifts
 
