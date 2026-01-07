@@ -15,23 +15,23 @@
             <div id="logo">
                 PATH
             </div>
-            <p>
+            <p id="credits">
                 Photo by <a href="https://unsplash.com/@plutohard?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">阳 高</a> on <a href="https://unsplash.com/photos/a-tall-tower-with-a-clock-on-top-of-it-dmzN3e4OQRg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
             </p>
         </div>
-        <div>
-            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
-            <p>You <em>know</em> you want to.</p>
+        <div id="form-container">
+            <p class="info">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+            <p class="info">You <em>know</em> you want to.</p>
             <form id="sign-up-form" action="" method="get">
-                <p>Let's do this!</p>
+                <p class="info">Let's do this!</p>
 
                 <fieldset>
                     <legend>Name</legend>
-                    <div>
+                    <div class="input-item">
                         <label for="fname">FIRST NAME</label>
                         <input type="text" id="fname" name="fname" minlength="5" maxlength="16" required>
                     </div>
-                    <div>
+                    <div class="input-item">
                         <label for="lname">LAST NAME</label>
                         <input type="text" id="lname" name="lname" minlength="5" maxlength="16" required>
                     </div>
@@ -39,11 +39,11 @@
 
                 <fieldset>
                     <legend>Contact</legend>
-                    <div>
+                    <div class="input-item">
                         <label for="email">EMAIL</label>
                         <input type="email" id="email" name="email" required>
                     </div>
-                    <div>
+                    <div class="input-item">
                         <label for="phone-number">PHONE NUMBER</label>
                         <input type="tel" id="phone-number" name="phone-number">
                     </div>
@@ -51,17 +51,17 @@
                 
                 <fieldset>
                     <legend>Password</legend>
-                    <div>
+                    <div class="input-item">
                         <label for="pwd">PASSWORD</label>
                         <input type="password" id="pwd" name="pwd" required>
                     </div>
-                    <div>
+                    <div class="input-item">
                         <label for="confirm-pwd">CONFIRM PASSWORD</label>
                         <input type="password" id="confirm-pwd" required>
                     </div>
                 </fieldset>
             </form>
-            <button type="submit" form="sign-up-form">Create Account</button>
+            <button class="cta" type="submit" form="sign-up-form">Create Account</button>
             <p>Already have an account? <a href="#">Log in</a></p>
         </div>
     </main>
