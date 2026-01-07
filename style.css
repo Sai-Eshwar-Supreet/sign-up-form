@@ -21,23 +21,30 @@
 
     /* Border */
     --color-border: #E5E7EB;
+
+    /* Input */
+    --color-input-focus: var(--color-accent);
+    --color-input-invalid: #C6362B;
 }
 
 @media (prefers-color-scheme: dark) {
     :root{
         /* Surfaces */
         --color-bg: #0F1318;
-        --color-surface: #141A21;
-
+        --color-surface: #161D26;
+        
         /* Text */
         --color-text-primary: #E6E8EB;
         --color-text-secondary: #9AA4AE;
-
+        
         /* Accents */
         --color-accent-contrast: #0F1318;
-
+        
         /* Border */
         --color-border: #232A33;
+
+        /* Input */
+        --color-input-invalid: #E05A4F;
     }
 }
 
@@ -113,7 +120,7 @@ main{
     margin-bottom: 16px;
 }
 
-@media only screen  and (max-width: 800px){
+@media only screen  and (max-width: 1000px){
     #hero-image{
         display: none;
     }
@@ -202,4 +209,23 @@ form#sign-up-form{
 
     height: 32px;
     padding: 8px;
+}
+
+/* Validation */
+
+.input-item > input[type="text"]:not(:placeholder-shown):invalid,
+.input-item > input[type="email"]:not(:placeholder-shown):invalid,
+.input-item > input[type="password"]:not(:placeholder-shown):invalid,
+.input-item > input[type="tel"]:not(:placeholder-shown):invalid
+{
+    border: 1px solid var(--color-input-invalid);
+}
+
+.input-item > input[type="text"]:focus,
+.input-item > input[type="email"]:focus,
+.input-item > input[type="password"]:focus,
+.input-item > input[type="tel"]:focus
+{
+    border: 0;
+    outline: 3px solid var(--color-input-focus);
 }
