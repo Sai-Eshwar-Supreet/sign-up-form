@@ -29,11 +29,11 @@
                     <legend>Name</legend>
                     <div class="input-item">
                         <label for="fname">FIRST NAME</label>
-                        <input type="text" id="fname" name="fname" minlength="5" maxlength="16" required>
+                        <input type="text" id="fname" name="fname" minlength="5" maxlength="16" pattern="^[^0-9]+$" placeholder="John" required>
                     </div>
                     <div class="input-item">
                         <label for="lname">LAST NAME</label>
-                        <input type="text" id="lname" name="lname" minlength="5" maxlength="16" required>
+                        <input type="text" id="lname" name="lname" minlength="5" maxlength="16" pattern="^[^0-9]+$" placeholder="Wick" required>
                     </div>
                 </fieldset>
 
@@ -41,7 +41,7 @@
                     <legend>Contact</legend>
                     <div class="input-item">
                         <label for="email">EMAIL</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" placeholder="johnwick@example.com" required>
                     </div>
                     <div class="input-item">
                         <label for="phone-number">PHONE NUMBER</label>
@@ -53,11 +53,17 @@
                     <legend>Password</legend>
                     <div class="input-item">
                         <label for="pwd">PASSWORD</label>
-                        <input type="password" id="pwd" name="pwd" required>
+                        <input type="password" id="pwd" name="pwd" minlength="12" 
+                        pattern="^\S{12,}$"
+                        title="At least 12 characters. Spaces are not allowed."
+                        autocomplete="new-password" required>
                     </div>
                     <div class="input-item">
                         <label for="confirm-pwd">CONFIRM PASSWORD</label>
-                        <input type="password" id="confirm-pwd" required>
+                        <input type="password" id="confirm-pwd" name="confirm-pwd" minlength="12" 
+                        pattern="^\S{12,}$"
+                        title="At least 12 characters. Spaces are not allowed."
+                        autocomplete="new-password" required>
                     </div>
                 </fieldset>
             </form>
