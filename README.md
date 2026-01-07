@@ -55,7 +55,7 @@ This is not a __real service__ and does not perform actual account creation.
 No form submission handling or backend integration is included
 
 ## Acknowledgements
-Background image by **[阳 高](https://unsplash.com/@plutohard?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)** on Unsplash
-Custom font (**[Manrope](https://fonts.google.com/share?selection.family=Manrope:wght@200..800)**) loaded via Google Fonts
-This project was completed as part of **[The Odin Project – Intermediate HTML & CSS Course](https://www.theodinproject.com/)**
+- Background image by **[阳 高](https://unsplash.com/@plutohard?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)** on Unsplash
+- Custom font (**[Manrope](https://fonts.google.com/share?selection.family=Manrope:wght@200..800)**) loaded via Google Fonts
+- This project was completed as part of **[The Odin Project – Intermediate HTML & CSS Course](https://www.theodinproject.com/)**
 
