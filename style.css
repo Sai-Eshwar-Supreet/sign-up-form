@@ -207,7 +207,7 @@ form#sign-up-form{
 
 .input-item > label, .input-item > input{
     width: 100%;
-    min-width: 200px;
+    min-width: min(100%, 200px);
 }
 
 .input-item > input[type="text"],
